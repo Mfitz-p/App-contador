@@ -11,7 +11,6 @@ class Number extends Component {
     this.Reset = this.Reset.bind(this);
   }
   Add() {
-    //this.setState((add) => ({ theNumber: add.theNumber + 1 }));
     this.setState({ theNumber: this.state.theNumber + 1 });
     /*Las llaves son para declarar un nuevo objeto > nuevo Objeto 
     > lectura de un valor de propiedad de un estado
@@ -21,7 +20,6 @@ class Number extends Component {
     con las nuevas propiedades y sus nuevos valores */
   }
   Substract() {
-    //this.setState((substracr) => ({ theNumber: substracr.theNumber - 2 }));
     this.setState(function (state) {
       return { theNumber: state.theNumber - 2 };
     });
@@ -55,9 +53,6 @@ class Number extends Component {
           <button className="btn-dark rounded mr-2" onClick={this.Divide}>
             Divide
           </button>
-          {/* <button className="btn-dark rounded mr-2" onClick={this.Reset}>
-            Reset
-          </button> */}
           {button}
         </div>
         <div className="col-sm mt-4 flex-row d-flex justify-content-center align-self-center">
